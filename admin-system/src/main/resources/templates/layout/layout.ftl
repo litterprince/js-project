@@ -1,6 +1,8 @@
 <#macro layout>
     <html>
     <head>
+        <meta charset="utf-8">
+        <title>ViewUI example</title>
         <#include "style.ftl">
         <#include "js.ftl">
     </head>

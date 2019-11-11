@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta charset="utf-8">
+    <title>ViewUI example</title>
     <link rel="stylesheet" href="${request.contextPath}/vue/iview.css"/>
     <script type="text/javascript" src="${request.contextPath}/vue/vue.min.js"></script>
     <script type="text/javascript" src="${request.contextPath}/vue/iview.min.js"></script>
