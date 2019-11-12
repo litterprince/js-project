@@ -1,0 +1,109 @@
+html, body {
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#app {
+    height: 100% !important;
+}
+
+.layout {
+    height: 100% !important;
+}
+
+.ivu-layout {
+    height: 100% !important;
+}
+
+.layout-header-bar {
+    background: #fff !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1) !important;
+}
+
+.toolbox-content-cls {
+    height: 100% !important;
+    overflow-y: auto;
+}
+
+.layout-logo {
+    width: 300px !important;
+    height: 60px !important;
+    display: inline-block !important;
+    float: left !important;
+}
+
+.layout-logo img {
+    width: 200px !important;
+    height: 50px !important;
+    margin-top: 5px !important;
+}
+
+.layout-logo-left {
+    width: 90% !important;
+    height: 30px !important;
+    background: #5b6270 !important;
+    border-radius: 3px !important;
+    margin: 15px auto !important;
+}
+
+.toolbox-iframe-cls {
+    /* padding-top: 10px; */
+    height: 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.layout-nav {
+    width: 350px !important;
+    float: right !important;
+}
+
+.layout-nav-right {
+    float: right !important;
+    width: 190px !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px !important;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    -webkit-border-radius: 6px !important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px !important;
+    background-color: rgba(125, 125, 125, 0.7) !important;
+    -webkit-border-radius: 6px !important;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px !important;
+    background-color: rgba(125, 125, 125, 0.7) !important;
+    -webkit-border-radius: 6px !important;
+}
+
+.header-logout {
+    background: #747b8b;
+    margin-left: 8px;
+}
+
+.header-logout:hover {
+    background: none;
+}
+
+.header-logout-icon {
+    margin-left: -10px;
+}
+
+.header-logout-icon:hover {
+    background: #747b8b !important;
+}
+
+.layout-nav-right .ivu-btn-text:hover {
+    background: #515a6e !important;
+}
