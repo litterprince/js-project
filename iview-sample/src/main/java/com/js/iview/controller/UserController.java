@@ -32,7 +32,7 @@ public class UserController {
         return getData();
     }
 
-    private List<User> getData(){
+    private List<User> getData() {
         List<User> list = Lists.newArrayList();
         list.add(User.builder().id(1).name("jeff").password("1").age(18).createTime(new Date()).build());
         list.add(User.builder().id(2).name("tom").password("2").age(18).createTime(new Date()).build());

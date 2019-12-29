@@ -1,13 +1,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <#include "../layout/style.ftl">
-    <#include "../layout/js.ftl">
+    <link rel="stylesheet" href="${request.contextPath}/vue/iview.css"/>
+    <script type="text/javascript" src="${request.contextPath}/vue/vue.min.js"></script>
+    <script type="text/javascript" src="${request.contextPath}/vue/iview.min.js"></script>
+    <script type="text/javascript" src="${request.contextPath}/jquery.min.js"></script>
 </head>
 
 <body>
 <div id="users">
-    <i-form ref="searchForm" :model="searchData" :rules="ruleInline" inline>
+    <Layout :style="{padding: '10px 20px'}">
+        <i-form ref="searchForm" :model="searchData" :rules="ruleInline" inline>
         <form-item prop="name">
             <i-input type="text" v-model="searchData.name" placeholder="用户名">
                 <Icon type="ios-person-outline" slot="prepend"></Icon>
@@ -18,8 +21,8 @@
                 <Icon type="ios-lock-outline" slot="prepend"></Icon>
             </i-input>
         </form-item>
-        <form-item label="" prop="selected">
-            <i-select v-model="searchData.selected" style="width:200px" placeholder="地址">
+        <form-item label="" prop="address">
+            <i-select v-model="searchData.address" style="width:200px" placeholder="地址">
                 <i-option v-for="item in selectList" :value="item.value" :key="item.value">{{item.label}}
                 </i-option>
             </i-select>
@@ -34,10 +37,9 @@
         </form-item>
     </i-form>
 
-    <Layout>
         <i-table :columns="columns" :data="data"></i-table>
 
-        <Page :total="total" show-total prev-text="上一页" next-text="下一页" @on-change="handlePage"/>
+        <Page :style="{padding: '10px 0'}" :total="total" show-total prev-text="上一页" next-text="下一页" @on-change="handlePage"/>
     </Layout>
 </div>
 
@@ -66,7 +68,7 @@
                 size: 10,
                 name: '',
                 age: '',
-                selected: '',
+                address: '',
                 dates: [],
                 startDate: '',
                 endDate: ''
@@ -80,7 +82,7 @@
         computed: {},
         created() {
             this.ctxPath = '${request.contextPath}';
-            //this.getList();
+            this.getList();
         },
         methods: {
             getList() {
@@ -94,7 +96,7 @@
                         if (res.code === 0) {
                             _this.data = res.data;
                         } else {
-                            _this.$Message.error(res.errorMessage);
+                            _this.$Message.error(res.message);
                         }
                     },
                     error: function (e) {

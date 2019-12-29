@@ -7,10 +7,12 @@ import lombok.Getter;
  */
 @Getter
 public class LogicException extends RuntimeException {
+
     /**
      * 异常信息
      */
     private String errorMsg;
+
     /**
      * 错误码
      */

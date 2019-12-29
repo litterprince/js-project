@@ -69,7 +69,8 @@
                     <breadcrumb-item>Layout</breadcrumb-item>
                 </Breadcrumb>
                 <i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
-                    <iframe id="mainFrame" name="mainFrame" width="100%" src="${request.contextPath}/user/index" frameborder="0" scrolling="no" class="iframe-cls"
+                    <iframe id="mainFrame" name="mainFrame" width="100%" src="${request.contextPath}/user/index"
+                            frameborder="0" scrolling="no" class="iframe-cls"
                             onload="setIframeHeight(this)"></iframe>
                 </i-content>
             </Layout>

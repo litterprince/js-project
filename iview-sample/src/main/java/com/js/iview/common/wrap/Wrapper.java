@@ -12,6 +12,7 @@ import java.io.Serializable;
  */
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 public class Wrapper<T> implements Serializable {
+
     private static final long serialVersionUID = -1831192102059984378L;
 
     /** 成功码. */
