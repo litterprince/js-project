@@ -1,4 +1,4 @@
-package com.js.index.dto;
+package com.js.index.model.dto;
 
 import java.io.Serializable;
 import java.util.Date;

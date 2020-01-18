@@ -8,8 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import com.google.common.collect.Lists;
-import com.js.index.dto.UserDto;
-import com.js.index.model.User;
+import com.js.index.model.dto.UserDto;
+import com.js.index.model.po.User;
 
 @Controller
 @RequestMapping(value = "/user")

@@ -1,4 +1,4 @@
-package com.js.index.model;
+package com.js.index.model.po;
 
 import java.io.Serializable;
 import java.util.Date;
