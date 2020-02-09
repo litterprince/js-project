@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.js</groupId>
-    <artifactId>iview-index</artifactId>
+    <artifactId>iview-sample</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>iview-index</name>
+    <name>iview-sample</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -50,6 +50,12 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.2-jre</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
