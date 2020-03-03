@@ -38,4 +38,10 @@ public class UserController {
         return list;
     }
 
+    @GetMapping(value = "/circle")
+    public String circle() {
+        return "tool/circle";
+    }
+
+
 }
